@@ -8,8 +8,8 @@ const schemaObj = {
     firstName: factoryDto(FACTORY_DTO_TYPES.String, "first name", 3, 30),
     lastName:  factoryDto(FACTORY_DTO_TYPES.String, "last name", 3, 30),
     email: factoryDto(FACTORY_DTO_TYPES.Email, "email"),
-    password: factoryDto(FACTORY_DTO_TYPES.Password, 'Password'),
-    newPassword: factoryDto(FACTORY_DTO_TYPES.Password, "new password"),
+    password: factoryDto(FACTORY_DTO_TYPES.Password, 'Password', 8, 16),
+    newPassword: factoryDto(FACTORY_DTO_TYPES.Password, "new password", 8, 16),
 }
 
 const UserJoiObject = Joi.object(schemaObj);

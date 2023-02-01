@@ -8,4 +8,5 @@ export const PORT = process.env.PORT || 8080,
     DB_NAME = process.env.DB_NAME || "postgres",
     DB_SYNC = process.env.DB_SYNC === "true",
     ACCESS_KEY = process.env.ACCESS_KEY || null,
-    SALT = process.env.SALT || "Ok"
+    SALT = process.env.SALT || "Ok",
+    CLIENT_URL = process.env.CLIENT_URL;

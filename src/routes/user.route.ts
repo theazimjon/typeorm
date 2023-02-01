@@ -11,7 +11,7 @@ router.route('/')
 
 router.post("/signup", userController.signUp.bind(userController));
 router.post("/signin", userController.signIn.bind(userController));
-router.post("/change-password",authGuard,  userController.changePassword.bind(userController))
+router.patch("/change-password",authGuard,  userController.changePassword.bind(userController))
 router.delete("/log-out", authGuard, userController.logout.bind(userController))
 
 router.route('/:id')

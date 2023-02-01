@@ -88,6 +88,7 @@ export class UserController {
         try{
             const {email, password} = await UserDto.login(request.body);
             const {user, token} = await this.userService.signin(email, password);
+            
             response.cookie("token", token, {
                 httpOnly: true
             })
