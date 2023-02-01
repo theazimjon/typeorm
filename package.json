@@ -1,0 +1,30 @@
+{
+   "name": "woodline-pro-test-task",
+   "version": "0.0.1",
+   "description": "WoodlinePro test task",
+   "type": "commonjs",
+   "scripts": {
+      "start": "ts-node src/main.ts",
+      "start:dev": "nodemon  src/main.ts",
+      "typeorm": "typeorm-ts-node-commonjs"
+   },
+   "devDependencies": {
+      "@types/bcrypt": "^5.0.0",
+      "@types/node": "^16.11.10",
+      "nodemon": "^2.0.20",
+      "ts-node": "10.7.0",
+      "typescript": "4.5.2"
+   },
+   "dependencies": {
+      "@types/express": "^4.17.16",
+      "bcrypt": "^5.1.0",
+      "cookie-parser": "^1.4.6",
+      "dotenv": "^16.0.3",
+      "express": "^4.18.2",
+      "joi": "^17.7.0",
+      "jsonwebtoken": "^9.0.0",
+      "pg": "^8.4.0",
+      "reflect-metadata": "^0.1.13",
+      "typeorm": "0.3.11"
+   }
+}
